@@ -21,10 +21,9 @@ fetchAPI();
 
  return (
       <div> 
-       <h1  className={styles.title} >Select Country</h1>
+       <h1 className={styles.title} >Select Country</h1>
      <FormControl className={styles.formControl}>
          <NativeSelect defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
-       
              <option value="">Global</option>
              {fetchedCountries.map((country,i) =>
               <option key={i} value={country}>{country}</option>)}
