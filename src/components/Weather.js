@@ -6,7 +6,7 @@ const Weather = () => {
 const [temp, setTemp] = useState('')
 
 useEffect(() => {
-      axios.get('https://api.openweathermap.org/data/2.5/weather?q=helsinki&appid=41f4cfe77c565c69a0fa892f6a6fad22&lang=en&units=metric')
+      axios.get('https://api.openweathermap.org/data/2.5/weather?q=helsinki&appid=addyourapi&lang=en&units=metric')
         .then((res)=>{
             console.log(res.data)
             setTemp (res.data.main.temp)
